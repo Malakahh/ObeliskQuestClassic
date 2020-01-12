@@ -1,7 +1,13 @@
 ## Interface: 80100
-## Title: |cFFDDCF99Obelisk|r Minimap
+## Title: |cFFDDCF99Obelisk|r Quest Classic
 ## Author: Malakahh
-## Notes: A clean minimap featuring coordinates, and masking. It also collects and stores minimap buttons
-## Version: r12
+## Notes: Upgraded questing UI
+## Version: 0.1
 
-
+libs\ObeliskFramework\ObeliskInclude.xml
+rewards.lua
+acceptAllQuestsBtn.lua
+zoneAbandon.lua
+objectiveElement.lua
+objectiveElement.layout.lua
+objectiveTracker.lua
