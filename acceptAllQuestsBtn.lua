@@ -6,6 +6,7 @@ btn:RegisterEvent("QUEST_GREETING")
 
 btn:SetText("Accept Quests")
 btn:SetWidth(btn:GetTextWidth() + 20)
+btn:SetFrameStrata("HIGH")
 
 local currentState = ""
 local availableQuestsInfo = {}
@@ -15,9 +16,8 @@ local function SetState(state)
 	currentState = state
 
 	if currentState == "GOSSIP_SHOW" then
-		print("Gossip show")
 		btn:SetParent(GossipFrame)
-		btn:SetPoint("BOTTOMLEFT", GossipFrame, "BOTTOMLEFT", 2, 4)
+		btn:SetPoint("BOTTOMLEFT", GossipFrame, "BOTTOMLEFT", 20, 72)
 	elseif currentState == "QUEST_GREETING" then
 		btn:SetParent(QuestFrameGreetingPanel)
 		btn:SetPoint("BOTTOMLEFT", QuestFrameGreetingPanel, "BOTTOMLEFT", 20, 72)
